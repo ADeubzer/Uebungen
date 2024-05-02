@@ -19,13 +19,13 @@ class Kreis {
     double getUmfang() {
         return 2* Math.PI * radius;
     }
-    double getFlaeche() {
+    double getFlaeche(double radius) {
         return radius * radius * Math.PI;
     }
     void setUmfang (double u){
         radius =  u / (2 * Math.PI);
     }
-    void setFlaeche (double f){
-        radius = Math.sqrt(f/ Math.PI);
+    double setFlaeche (double f){
+        return Math.sqrt(f/ Math.PI);
     }
 }

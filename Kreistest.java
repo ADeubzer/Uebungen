@@ -10,7 +10,7 @@ public class Kreistest {
      System.out.println(k.radius);
     System.out.println(k.getRadius());
     System.out.println(k.getUmfang());
-    System.out.println(k.getFlaeche());
+    System.out.println(k.getFlaeche(radius));
     double u = Double.parseDouble(JOptionPane.showInputDialog("Geben Sie einen Wert für den Umfang ein:"));
     k.setUmfang(u);
     System.out.println(k.radius);
