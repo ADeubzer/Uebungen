@@ -12,22 +12,22 @@ class Rechteck {
         this.laenge = laenge;
         this.breite = breite;
     }
-    // void setLaenge(double laenge) {
-    //     this.laenge = laenge;
-    // }
-    // void setBreite(double breite) {
-    //     this.breite = breite;
-    // }
+   double getLaenge(){
+        return laenge;
+   } 
+   double getBreite(){
+        return breite;
+   }
+    void setLaenge(double laenge) {
+        this.laenge = laenge;
+    }
+    void setBreite(double breite) {
+        this.breite = breite;
+    }
     // void setSeiten(double laenge, double breite) {
     //     this.laenge = laenge;
     //     this.breite = breite;
     // }
-//    double getLaenge(){
-//         return laenge;
-//    } 
-//    double getBreite(){
-//         return breite;
-//    }
    double getLangeseite(){
     if (laenge > breite) {
        return laenge;

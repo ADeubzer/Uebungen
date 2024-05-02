@@ -5,15 +5,15 @@ class Kreis {
     Kreis (){
         radius = 0.0;
     }
+    void setRadius(double radius) {
+        this.radius = radius;
+    }
     Kreis (double radius) {
         this.radius = radius;
     }
     double getRadius(){
         return radius;
     }
-    // void setRadius(double radius) {
-    //     this.radius = radius;
-    // }
     double getUmfang() {
         return 2* Math.PI * radius;
     }
