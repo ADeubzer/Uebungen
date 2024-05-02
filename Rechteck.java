@@ -3,6 +3,8 @@ package de.habelitz.uebung05;
 class Rechteck {
     double laenge;
     double breite;
+    double l;
+    double b;
     public String getLangeseite;
     Rechteck(){   // Kantenlaengen 
         laenge = 0.0;
@@ -15,6 +17,12 @@ class Rechteck {
    double getLaenge(){
         return laenge;
    } 
+   double getLaengevergroessern(){
+    return l;
+    }
+    double getBreitevergroessern(){
+        return b;
+   } 
    double getBreite(){
         return breite;
    }
@@ -23,6 +31,12 @@ class Rechteck {
     }
     void setBreite(double breite) {
         this.breite = breite;
+    }
+    void laengeVergroessern (double l) {
+        laenge = this.laenge + l;
+    }
+    void breiteVergroessern (double b) {
+        breite = this.breite +b;
     }
     // void setSeiten(double laenge, double breite) {
     //     this.laenge = laenge;
@@ -51,4 +65,9 @@ class Rechteck {
     double getUmfang() {
         return (laenge * laenge) + (breite * breite); 
     }
+    // void laengeAusgeben () {
+    //     var laenge = 5.4;
+    //     System.out.println("Laenge: " + laenge);
+    // }
+    
 }

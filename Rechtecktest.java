@@ -10,6 +10,10 @@ public static void main(String[] args) {
         double breite = Double.parseDouble(JOptionPane.showInputDialog("Bitte geben Sie die Breite ein: "));
         r.setLaenge(laenge);
         r.setBreite(breite);
+        double l = Double.parseDouble(JOptionPane.showInputDialog("Bitte geben Sie die zusaetzliche Laenge ein: "));
+        r.laengeVergroessern(l);
+        double b = Double.parseDouble(JOptionPane.showInputDialog("Bitte geben Sie die zusaetzliche Breite ein: "));
+        r.breiteVergroessern(b);
         System.out.println("Laenge:" + r.laenge + " " + "Breite:" + r.breite);
     // r.setSeiten(5.0, 8.0);
     // System.out.println("Laenge:" + r.getLaenge() + " " + "Breite:" + r.getBreite());
@@ -18,5 +22,6 @@ public static void main(String[] args) {
     System.out.println("Die Diagonale ist " + r.getDiagonale() + "cm lang");
     System.out.println("Die Flaeche ist " + r.getFlaeche() + "cm lang");
     System.out.println("Der Umfang ist " + r.getUmfang() + "cm lang");
+    // r.laengeAusgeben();
 }
 }
