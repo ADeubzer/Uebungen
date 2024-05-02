@@ -5,6 +5,8 @@ class Rechteck {
     double breite;
     double l;
     double b;
+    double lv;
+    double bv;
     public String getLangeseite;
     Rechteck(){   // Kantenlaengen 
         laenge = 0.0;
@@ -37,6 +39,12 @@ class Rechteck {
     }
     void breiteVergroessern (double b) {
         breite = this.breite +b;
+    }
+    void laengeverkleinern  (double lv) {
+        laenge = this.laenge - lv;
+    }
+    void breiteverkleinern (double bv) {
+        breite = this.breite - bv;
     }
     // void setSeiten(double laenge, double breite) {
     //     this.laenge = laenge;

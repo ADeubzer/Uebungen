@@ -15,7 +15,11 @@ public static void main(String[] args) {
         double b = Double.parseDouble(JOptionPane.showInputDialog("Bitte geben Sie die zusaetzliche Breite ein: "));
         r.breiteVergroessern(b);
         System.out.println("Laenge:" + r.laenge + " " + "Breite:" + r.breite);
-    // r.setSeiten(5.0, 8.0);
+        double lv = Double.parseDouble(JOptionPane.showInputDialog("Bitte geben Sie die Groesse die Sie von der Laenge abziehen wollen ein: "));
+        r.laengeverkleinern(lv);
+        double bv = Double.parseDouble(JOptionPane.showInputDialog("Bitte geben Sie die Groesse die Sie von der Breite abziehen wollen ein: "));
+        r.breiteverkleinern(bv);
+        // r.setSeiten(5.0, 8.0);
     // System.out.println("Laenge:" + r.getLaenge() + " " + "Breite:" + r.getBreite());
     System.out.println("Die laengere Seite ist " + r.getLangeseite() + " cm lang");
     System.out.println("Die kuerzere Seite ist " + r.getKurzeseite() + " cm lang");
