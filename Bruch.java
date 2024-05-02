@@ -4,7 +4,7 @@ public class Bruch {
     int zaehler;
     int nenner;
     void ausgeben() {
-        int zaehler = 0;
+        // int zaehler = 0;
         System.out.println("");
         System.out.println(this.zaehler + "/" + nenner);
     }
